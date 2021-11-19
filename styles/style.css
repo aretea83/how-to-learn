@@ -1,4 +1,4 @@
-body, h1, h2, p {
+body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
@@ -12,6 +12,20 @@ body, h1, h2, p {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.text {
+  font-weight: normal;
+}
+
+.text_fz18 {
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+.text_fz24 {
+  line-height: 34px;
+  font-size: 24px;
 }
 
 .header {
@@ -49,7 +63,6 @@ body, h1, h2, p {
   left: 64px;
   line-height: 25px;
   font-size: 18px;
-  font-weight: normal;
 }
 
 .header__link {
@@ -93,9 +106,6 @@ body, h1, h2, p {
 .two-columns__brief {
   width: 175px;
   color: #2f80ed;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .two-columns__main-text {
@@ -104,9 +114,6 @@ body, h1, h2, p {
 }
 
 .two-columns__paragraph {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   margin-bottom: 30px;
 }
 
@@ -116,6 +123,47 @@ body, h1, h2, p {
 
 .two-columns__span-accent {
   font-weight: bold;
+}
+
+.digits {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  margin-top: 20px;
+}
+
+.table {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  width: 1100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+  margin-bottom: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  margin-top: 20px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
