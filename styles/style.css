@@ -1,12 +1,5 @@
-body, h1, h2, h3, h4, p, ul {
-  margin: 0;
-  padding: 0;
-}
-* {
-  box-sizing: border-box;
-}
-
 .page {
+  padding: 0;
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -27,17 +20,23 @@ body, h1, h2, h3, h4, p, ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 183px;
 }
 
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-  width: 183px;
   height: 32px;
 }
 
 .header__title {
+  margin: 0;
+  padding: 0;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
@@ -47,6 +46,8 @@ body, h1, h2, h3, h4, p, ul {
 }
 
 .header__subtitle {
+  margin: 0;
+  padding: 0;
   position: absolute;
   width: 388px;
   bottom: 30px;
@@ -86,6 +87,7 @@ body, h1, h2, h3, h4, p, ul {
   margin-top: 100px;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .two-columns {
@@ -97,6 +99,8 @@ body, h1, h2, h3, h4, p, ul {
 }
 
 .two-columns__brief {
+  margin: 0;
+  padding: 0;
   width: 175px;
   color: #2f80ed;
   line-height: 1.2;
@@ -110,13 +114,15 @@ body, h1, h2, h3, h4, p, ul {
 }
 
 .two-columns__paragraph {
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
-.two-columns__paragraph:nth-child(3n) {
+.two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
 
@@ -129,15 +135,20 @@ body, h1, h2, h3, h4, p, ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .section-title {
+  margin: 0;
+  padding: 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
 
 .section-subtitle {
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
   line-height: 34px;
   font-size: 24px;
@@ -145,6 +156,8 @@ body, h1, h2, h3, h4, p, ul {
 }
 
 .table {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   width: 1100px;
@@ -160,12 +173,16 @@ body, h1, h2, h3, h4, p, ul {
 }
 
 .table__heading {
+  margin: 0;
+  padding: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
 .table__text {
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
@@ -174,7 +191,7 @@ body, h1, h2, h3, h4, p, ul {
 
 .feynman {
   position: relative;
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   padding-top: 100px;
   display: flex;
@@ -184,9 +201,12 @@ body, h1, h2, h3, h4, p, ul {
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 867px 637px;
+  box-sizing: border-box;
 }
 
 .feynman__title {
+  margin: 0;
+  padding: 0;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
@@ -196,6 +216,8 @@ body, h1, h2, h3, h4, p, ul {
 }
 
 .feynman__subtitle {
+  margin: 0;
+  padding: 0;
   position: relative;
   margin-top: 70px;
   line-height: 51px;
@@ -224,19 +246,18 @@ body, h1, h2, h3, h4, p, ul {
   align-items: center;
   color: #fff;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .kaufman__triangle {
-/*  position: absolute;
-  top: 0;
-  right: -210px;*/
   background-image: url(../images/kaufman-triangle.svg);
-  width: 877px;
-  height: 877px;
-  background-position: top -90px right -210px;
+  width: 100vw;
+  height: 100vh;
+  background-position: top right;
   position: absolute;
-  object-fit: cover;
-  background-size: cover;
+  top: 0;
+  right: -210px;
+  background-size: 877px 877px;
   background-repeat: no-repeat;
 }
 
@@ -251,6 +272,8 @@ body, h1, h2, h3, h4, p, ul {
   background-color: #1f1f1f;
   padding: 60px 0 40px 0;
   color: #fff;
+  box-sizing: border-box;
+  display: flex;
 }
 
 .footer__columns {
@@ -263,18 +286,18 @@ body, h1, h2, h3, h4, p, ul {
 
 .footer__column_content_copyright {
   flex-basis: 711px;
-  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .logo_place_footer {
-  width: 183px;
   height: 35px;
 }
 
 .footer__author {
+  margin: 0;
+  padding: 0;
   padding: 18px 0;
   line-height: 25px;
   font-size: 18px;
@@ -282,12 +305,16 @@ body, h1, h2, h3, h4, p, ul {
 }
 
 .footer__column-heading {
+  margin: 0;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .footer__column-links {
+  margin: 0;
+  padding: 0;
   margin: 20px 0 16px 0;
   list-style-type: none;
 }
