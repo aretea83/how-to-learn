@@ -7,7 +7,7 @@
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
-  transition: opacity 2s linear;
+  transition: opacity .8s linear;
 }
 
 .feynman__link:hover {
